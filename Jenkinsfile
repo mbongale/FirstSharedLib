@@ -1,13 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Setup Android environment') {
-            steps {
-                script {
-                    setupstep()
-                }
-            }
-        }
+        
         stage('build the project') {
             steps{
                 script{
