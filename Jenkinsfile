@@ -7,7 +7,7 @@ pipeline {
             }
             steps{
                 script{
-                    sh 'chown -R $(whoami) $ANDROID_HOME'
+                    
                     sh 'chmod +x gradlew'
                     sh './gradlew clean'
                     sh './gradlew build'
