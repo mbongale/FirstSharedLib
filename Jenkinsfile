@@ -21,7 +21,7 @@ pipeline {
 
 def setupstep() {
     script {
-        sh 'sudo apt-get update -y && apt-get install unzip -y && sudo apt-get install openjdk-11-jre -y && sudo apt android-sdk -y && sudo apt install sdkmanager -y'
+        sh 'apt-get update -y && apt-get install unzip -y && sudo apt-get install openjdk-11-jre -y && sudo apt android-sdk -y && sudo apt install sdkmanager -y'
         sh 'wget https://services.gradle.org/distributions/gradle-7.4-bin.zip'
         sh 'mkdir /opt/gradle'
         sh 'unzip -d /opt/gradle gradle-7.4-bin.zip'
